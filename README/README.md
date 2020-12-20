@@ -4,12 +4,10 @@ The files in this repository were used to configure the network depicted below.
 
 ![Network Diagram](./Images/Second_diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
-
-  - _TODO: Enter the playbook file._
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the metricbeat-filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -98,7 +96,7 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the elkplaybook.yml and metric-filebeat-playbook.yml file to /etc/ansible.
+- Copy the elkplaybook.yml and metricbeat-filebeat-playbook.yml file to /etc/ansible.
 - Update the /etc/ansible/hosts file to include the local IP and the group name as well as the python interpreter. To specify the machine you want to Install the playbook on you need to add the group name that you entered into the hosts file into the playbook YAML file (ex. "hosts: websevers or hosts: elk")
 - Run the playbook, and navigate to http://[Your.VM.Public.IP]:5601/app/kibana to check that the installation worked as expected.
 
