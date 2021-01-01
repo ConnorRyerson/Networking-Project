@@ -29,7 +29,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function    | IP Address | Operating System |
 |----------|-------------|------------|------------------|
 | -------- | ----------- | ---------- | ---------------- |
-| Jump Box | Gateway     | 10.0.0.1   | Linux            |
+| Jump Box | Gateway     | 10.0.0.4   | Linux            |
 | Web-1 VM | DVWA Server | 10.0.0.9   | Linux            |
 | Web-2 VM | DVWA Server | 10.0.0.10  | Linux            |
 | Web-3 VM | DVWA Server | 10.0.0.11  | Linux            |
@@ -40,11 +40,11 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-98.224.82.159_
+98.224.82.159
 
 Machines within the network can only be accessed by The Jump Box.
-104.211.38.60
-10.0.0.4
+- 104.211.38.60
+- 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -89,7 +89,7 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 
-- Filebeat allows you to monitor and collect log files or location, you can find graphs depicting the traffic to your server, the ammount of unique connections, the type of errors recieved by these connections. Aswell as the source IP, Geolocation, and url they accessed it from.
+- Filebeat allows you to monitor and collect log files or location, you can find graphs depicting the traffic to your server, the ammount of unique connections, and the type of errors recieved by these connections. Aswell as the source IP, geolocation, and url they accessed it from.
 - Metricbeat allows you to collect and analyze the metrics of your applications. Metricbeat will show Inbound and Outbound traffic, Memory usage, Disk usage, CPU usage, In and Out packetloss, and many other metrics.
 
 ### Using the Playbook
