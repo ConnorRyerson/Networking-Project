@@ -103,13 +103,13 @@ SSH into the control node and follow the steps below:
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 To download the DVWA playbook the user would need to download the file to their directory with the following command.
 - curl https://github.com/ConnorRyerson/Networking-Project/blob/main/README/Playbooks/DVWA_playbook.yml
-To run the playbook you would run the ansible command
+- To run the playbook you would run the ansible command
 - ansible-playbook DVWA_playbook.yml
-To download the elk play book run
+- To download the elk play book run
 - curl https://github.com/ConnorRyerson/Networking-Project/blob/main/README/Playbooks/elkplaybook.yml
-To run use
+- To run use
 - ansible-playbook elkplaybook.yml
-To download metricbeat and filebeat run
+- To download metricbeat and filebeat run
 - curl https://github.com/ConnorRyerson/Networking-Project/blob/main/README/Playbooks/metricbeat-filebeat-playbook.yml
-To run use
+- To run use
 - ansible-playbook metricbeat_filebeat_playbook.yml
