@@ -110,6 +110,6 @@ To download the DVWA playbook the user would need to download the file to their 
 - To run use
 - ansible-playbook elkplaybook.yml
 - To download metricbeat and filebeat run
-- curl https://github.com/ConnorRyerson/Networking-Project/blob/main/README/Playbooks/metricbeat-filebeat-playbook.yml
+- curl https://github.com/ConnorRyerson/Networking-Project/blob/main/README/Playbooks/metricbeat_filebeat_playbook.yml
 - To run use
 - ansible-playbook metricbeat_filebeat_playbook.yml
